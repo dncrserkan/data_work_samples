@@ -1,0 +1,5 @@
+online retail II
+	- https://archive.ics.uci.edu/dataset/502/online+retail+ii
+	- Chen, Daqing. "Online Retail II." UCI Machine Learning Repository, 2012, https://doi.org/10.24432/C5CG6D.
+
+    For data files, run them sequentially after downloading the original data file.

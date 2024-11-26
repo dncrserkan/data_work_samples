@@ -1,0 +1,53 @@
+
+DATA TAKEN FROM
+	https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023
+
+
+TIP
+	use encoding 'latin-1'
+
+
+CORRECTION
+
+	1- In 'stream' column, there is an cell which is not type of interger
+		→ change with it's right value (Spotify)
+	2- In 'stream' column, there are two cells that their values are too low to be in this set
+		→ change their values (Spotify)
+	3- In 'artist(s)_name' column, there are some cells with more than one artist
+		→ separate them into two columns 'artist_name' and 'featuring_names'
+		→ act like first artist is the actual artist and the others are featuring artists
+	4- Unite the date columns and drop old ones
+	5- Drop all columns wich starts with 'in_...'
+	6- Change columns name with easy versions
+	6- WRITE NEW VERSION AS 'spotify_2023_clean'
+	
+
+KEY FEATURES
+
+	track_name: 		Name of the song
+	artist(s)_name: 	Name of the artist(s) of the song
+	artist_count: 		Number of artists contributing to the song
+
+	released_year: 		Year when the song was released
+	released_month: 	Month when the song was released
+	released_day: 		Day of the month when the song was released
+
+	in_spotify_playlists: 	Number of Spotify playlists the song is included in
+	in_spotify_charts: 	Presence and rank of the song on Spotify charts
+	streams: 		Total number of streams on Spotify
+	in_apple_playlists: 	Number of Apple Music playlists the song is included in
+	in_apple_charts: 	Presence and rank of the song on Apple Music charts
+	in_deezer_playlists: 	Number of Deezer playlists the song is included in
+	in_deezer_charts: 	Presence and rank of the song on Deezer charts
+	in_shazam_charts: 	Presence and rank of the song on Shazam charts
+
+	bpm: 			Beats per minute, a measure of song tempo
+	key: 			Key of the song
+	mode: 			Mode of the song (major or minor)
+	danceability_%: 	Percentage indicating how suitable the song is for dancing
+	valence_%: 		Positivity of the song's musical content
+	energy_%: 		Perceived energy level of the song
+	acousticness_%: 	Amount of acoustic sound in the song
+	instrumentalness_%: 	Amount of instrumental content in the song
+	liveness_%: 		Presence of live performance elements
+	speechiness_%: 		Amount of spoken words in the song

@@ -1,0 +1,26 @@
+
+DATA IS TAKEN FROM
+    https://data.ibb.gov.tr/dataset/istanbul-barajlari-gunluk-doluluk-oranlari/resource/af0b3902-cfd9-4096-85f7-e2c3017e4f21
+    
+    https://data.ibb.gov.tr/dataset/86658ecd-f3f7-4ca4-a313-ae6204f21959/resource/af0b3902-cfd9-4096-85f7-e2c3017e4f21/download/istanbul-dams-daily-occupancy-rates.xlsx
+    
+    https://www.turkiye.gov.tr/istanbul-su-ve-kanalizasyon-idaresi-baraj-doluluk-oranlari
+    
+
+CORRECTION
+
+	1- In some rows have different date format and percentage format
+		→ separate them and turn one into another
+	2- WRITE NEW VERSION AS 'clean_rates.csv'
+
+
+KEY FEATURES
+
+- Istanbul-dams-daily-occupancy-rates
+    Tarih: It contains the date of measurement
+    Dam Name: Dam Daily Occupancy Rate (%)
+    ...
+    Dam Name: Dam Daily Occupancy Rate (%)
+
+- capacities
+    Istanbul: capacities of each of dam [cubic meter]
